@@ -50,7 +50,7 @@ section {
     color: var(--alttextColor);
 }
 .btn-hollow {
-    background-color: var(--mainColor);
+    background-color: transparent;
     color: var(--textColor);
 }
 .section-heading {
@@ -58,7 +58,7 @@ section {
 }
 
 /* Styles for text */
-h1, h2 {
+h1, h2, h3 {
     margin-bottom: 5px;
 }
 h1 {
@@ -73,6 +73,7 @@ h2 {
 }
 p {
     font-weight: 200;
+    padding: 15px 0;
 }
 
 
@@ -128,4 +129,47 @@ nav li button.btn-full:hover {
 }
 #name {
     font-size: 300%;
+}
+
+
+/* Style rules for about section */
+
+
+
+/* Styles for projects section */
+section#projects {
+    background-color: var(--footerColor);
+}
+section#projects div.flex {
+    flex-wrap: wrap;
+}
+.project-card {
+    background-color: #000;
+    border-radius: 1em;
+    margin: 20px 0;
+    padding: 15px;
+}
+
+
+
+/* Styles for footer */
+footer {
+    background-color: var(--footerColor);
+    padding: 60px 0;
+}
+footer div ul {
+   list-style-type: none;
+}
+footer div ul li {
+    
+}
+footer div ul li a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+#copyright {
+    font-size: 80%;
+    padding-top: 30px;
+    text-align: center;
+    opacity: .3;
 }
