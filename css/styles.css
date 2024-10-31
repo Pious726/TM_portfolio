@@ -9,9 +9,10 @@
 :root {
     --mainColor: #001021;
     --secondaryColor: #F4F7F9;
-    --accentColor: #00398F;
+    --accentColor: #001F52;
     --textColor: #F4F7F9;
     --alttextColor: #001021;
+    --footerColor: #000A14;
 }
 html {
     font-family: "Nunito Sans", sans-serif;
@@ -20,7 +21,7 @@ html {
     background-color: var(--mainColor);
     color: var(--textColor);
 }
-body {
+.container {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -28,29 +29,29 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+section {
+    padding: 15px;
 }
 .acc {
     background-color: var(--accentColor);
 }
-.btn-full {
-    background-color: var(--secondaryColor);
-    border: 2px solid --secondaryColor;
-    border-radius: 1.25em;
-    padding: 10px;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 500;
-    color: var(--alttextColor);
-    cursor: pointer;
-}
-.btn-hollow {
-    background-color: var(--mainColor);
+.btn {
     border: 2px solid var(--secondaryColor);
     border-radius: 1.25em;
     padding: 10px;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 500;
-    color: var(--textColor);
     cursor: pointer;
+}
+.btn-full {
+    background-color: var(--secondaryColor);
+    color: var(--alttextColor);
+}
+.btn-hollow {
+    background-color: var(--mainColor);
+    color: var(--textColor);
 }
 
 
@@ -73,31 +74,42 @@ p {
 
 
 /* Styles for header section */
-header {
-    padding-top: 15px;
-}
 header.flex {
     justify-content: space-between;
-    align-items: center;
+}
+.logo {
+    max-width: 100%;
+    width: 10em;
+    height: auto;
 }
 nav ul {
     list-style-type: none;
 }
-nav ul.flex {
-    align-items: center;
-}
 nav li {
     padding: 0 10px;
 }
-nav li a{
+nav li a {
     text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
     color: var(--textColor);
-    opacity: .3;
+    position: relative;
+    display: inline-block;
 }
-nav li a:hover {
-    opacity: 1;
-    transition: 0.4s;
+nav li a:last-child {
+    transform: none;
 }
-nav ul a button.btn-hollow {
-
+nav li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--textColor);
+    transition: transform 0.15s ease-out;
+}
+nav li a:hover::after {
+    transform: scaleX(1);
 }
