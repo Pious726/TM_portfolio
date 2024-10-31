@@ -1,3 +1,4 @@
+/* Styles for universal elements */
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +7,97 @@
     outline: 0;
 }
 :root {
-    --backgroundColor: #F4F6F9;
-    --accentColor: #0062F5;
-    --textColor: #001021;
-    --alttextColor: #F4F6F9;
+    --mainColor: #001021;
+    --secondaryColor: #F4F7F9;
+    --accentColor: #00398F;
+    --textColor: #F4F7F9;
+    --alttextColor: #001021;
 }
-body {
+html {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 300;
-    background-color: var(--backgroundColor);
+    font-size: 16px;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+body {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.acc {
+    background-color: var(--accentColor);
+}
+.btn-full {
+    background-color: var(--secondaryColor);
+    border: 2px solid --secondaryColor;
+    border-radius: 1.25em;
+    padding: 10px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    color: var(--alttextColor);
+    cursor: pointer;
+}
+.btn-hollow {
+    background-color: var(--mainColor);
+    border: 2px solid var(--secondaryColor);
+    border-radius: 1.25em;
+    padding: 10px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+
+/* Styles for text */
+h1, h2 {
+    margin-bottom: 5px;
+}
+h1 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 200%;
+}
+h2 {
+    font-weight: 300;
+    font-size: 150%;
+}
+p {
+    font-weight: 200;
+}
+
+
+/* Styles for header section */
+header {
+    padding-top: 15px;
+}
+header.flex {
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul.flex {
+    align-items: center;
+}
+nav li {
+    padding: 0 10px;
+}
+nav li a{
+    text-decoration: none;
+    color: var(--textColor);
+    opacity: .3;
+}
+nav li a:hover {
+    opacity: 1;
+    transition: 0.4s;
+}
+nav ul a button.btn-hollow {
+
 }
