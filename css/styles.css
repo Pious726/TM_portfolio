@@ -9,7 +9,7 @@
 :root {
     --mainColor: #001021;
     --secondaryColor: #F4F7F9;
-    --accentColor: #001F52;
+    --accentColor: #007BFF;
     --textColor: #F4F7F9;
     --alttextColor: #001021;
     --footerColor: #000A14;
@@ -53,7 +53,9 @@ section {
     background-color: var(--mainColor);
     color: var(--textColor);
 }
-
+.section-heading {
+    text-align: center;
+}
 
 /* Styles for text */
 h1, h2 {
@@ -62,11 +64,12 @@ h1, h2 {
 h1 {
     font-family: "Outfit", sans-serif;
     font-weight: 400;
-    font-size: 200%;
+    font-size: 300%;
 }
 h2 {
+    font-family: "Outfit", sans-serif;
     font-weight: 300;
-    font-size: 150%;
+    font-size: 200%;
 }
 p {
     font-weight: 200;
@@ -109,7 +112,20 @@ nav li a::after {
     left: 0;
     background-color: var(--textColor);
     transition: transform 0.15s ease-out;
+    background-color: var(--accentColor);
 }
 nav li a:hover::after {
     transform: scaleX(1);
+}
+nav li button.btn-full:hover {
+    background-color: var(--accentColor);
+    border-color: var(--accentColor);
+    color: var(--textColor);
+    transition: background-color 0.15s ease-out;
+}
+.header-body {
+    padding: 15em 0;
+}
+#name {
+    font-size: 300%;
 }
