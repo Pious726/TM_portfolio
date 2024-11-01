@@ -32,10 +32,10 @@ html {
     align-items: center;
 }
 section {
-    padding: 15px;
+    padding: 30px 0;
 }
 .acc {
-    background-color: var(--accentColor);
+    background-color: var(--footerColor);
 }
 .btn {
     border: 2px solid var(--secondaryColor);
@@ -56,7 +56,20 @@ section {
 .section-heading {
     text-align: center;
 }
-
+.section-heading::after {
+    content: '';
+    height: 2px;
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    background-color: var(--accentColor);
+}
+.subheading {
+    text-align: center;
+    padding-top: 10px;
+}
 /* Styles for text */
 h1, h2, h3 {
     margin-bottom: 5px;
@@ -72,7 +85,7 @@ h2 {
     font-size: 200%;
 }
 p {
-    font-weight: 200;
+    font-weight: 300;
     padding: 15px 0;
 }
 
@@ -81,9 +94,12 @@ p {
 header.flex {
     justify-content: space-between;
 }
+.header-body.flex {
+    justify-content: space-evenly;
+}
 .logo {
     max-width: 100%;
-    width: 10em;
+    width: 5em;
     height: auto;
 }
 nav ul {
@@ -99,9 +115,6 @@ nav li a {
     color: var(--textColor);
     position: relative;
     display: inline-block;
-}
-nav li a:last-child {
-    transform: none;
 }
 nav li a::after {
     content: '';
@@ -125,31 +138,37 @@ nav li button.btn-full:hover {
     transition: background-color 0.15s ease-out;
 }
 .header-body {
-    padding: 15em 0;
+    padding: 5em 0;
 }
 #name {
     font-size: 300%;
 }
-
+.header-img {
+    width: 75%;
+    height: auto;
+}
 
 /* Style rules for about section */
 
 
 
 /* Styles for projects section */
-section#projects {
-    background-color: var(--footerColor);
-}
 section#projects div.flex {
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .project-card {
     background-color: #000;
     border-radius: 1em;
     margin: 20px 0;
     padding: 15px;
+    width: calc(50% - 20px);
 }
-
+.gallery {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: calc(25% - px);
+}
 
 
 /* Styles for footer */
@@ -157,15 +176,38 @@ footer {
     background-color: var(--footerColor);
     padding: 60px 0;
 }
-footer div ul {
+footer .flex {
+    align-items: first baseline;
+    justify-content: space-between;
+}
+#quick-links ul {
    list-style-type: none;
 }
-footer div ul li {
-    
+#quick-links ul li {
+    padding: 2px 0;
 }
-footer div ul li a {
+#quick-links ul li a {
     text-decoration: none;
     color: var(--textColor);
+    position: relative;
+}
+#quick-links ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--textColor);
+    transition: transform 0.15s ease-out;
+    background-color: var(--accentColor);
+}
+#quick-links ul li a:hover::after {
+    transform: scaleX(1);
+}
+.socials {
+    color: #F4F7F9;
 }
 #copyright {
     font-size: 80%;
