@@ -37,9 +37,6 @@ section {
 section#header {
     padding-bottom: 0;
 }
-section#about {
-    padding-top: 0;
-}
 .acc {
     background-color: var(--secondaryColor);
 }
@@ -173,7 +170,7 @@ nav li button.btn-full:hover {
     font-size: 500%;
 }
 .header-img {
-    height: 70%;
+    height: 50%;
     max-height: 500px;
     width: auto;
     object-fit: cover;
@@ -220,7 +217,15 @@ section#projects .flex {
 }
 
 
-/* Styles for footer */
+/* Styles for contact section */
+form {
+    background-color: var(--secondaryColor);
+    padding: 30px;
+    border-radius: 1em;
+}
+
+
+/* Styles for footer section */
 footer {
     background-color: var(--secondaryColor);
     padding: 60px 0;
