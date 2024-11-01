@@ -8,18 +8,17 @@
 }
 :root {
     --mainColor: #001021;
-    --secondaryColor: #F4F7F9;
+    --secondaryColor: #000;
     --accentColor: #007BFF;
-    --textColor: #F4F7F9;
-    --alttextColor: #001021;
-    --footerColor: #000A14;
+    --text: #F4F7F9;
+    --alttext: #001021;
 }
 html {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 300;
     font-size: 16px;
     background-color: var(--mainColor);
-    color: var(--textColor);
+    color: var(--text);
 }
 .container {
     max-width: 1140px;
@@ -32,13 +31,14 @@ html {
     align-items: center;
 }
 section {
-    padding: 30px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .acc {
-    background-color: var(--footerColor);
+    background-color: var(--secondaryColor);
 }
 .btn {
-    border: 2px solid var(--secondaryColor);
+    border: 2px solid var(--text);
     border-radius: 1.25em;
     padding: 10px;
     font-family: "Nunito Sans", sans-serif;
@@ -46,12 +46,12 @@ section {
     cursor: pointer;
 }
 .btn-full {
-    background-color: var(--secondaryColor);
-    color: var(--alttextColor);
+    background-color: var(--text);
+    color: var(--alttext);
 }
 .btn-hollow {
     background-color: transparent;
-    color: var(--textColor);
+    color: var(--text);
 }
 .section-heading {
     text-align: center;
@@ -98,8 +98,7 @@ header.flex {
     justify-content: space-evenly;
 }
 .logo {
-    max-width: 100%;
-    width: 5em;
+    width: 15%;
     height: auto;
 }
 nav ul {
@@ -112,7 +111,7 @@ nav li a {
     text-decoration: none;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
-    color: var(--textColor);
+    color: var(--text);
     position: relative;
     display: inline-block;
 }
@@ -124,7 +123,7 @@ nav li a::after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--textColor);
+    background-color: var(--text);
     transition: transform 0.15s ease-out;
     background-color: var(--accentColor);
 }
@@ -134,7 +133,7 @@ nav li a:hover::after {
 nav li button.btn-full:hover {
     background-color: var(--accentColor);
     border-color: var(--accentColor);
-    color: var(--textColor);
+    color: var(--text);
     transition: background-color 0.15s ease-out;
 }
 .header-body {
@@ -147,9 +146,6 @@ nav li button.btn-full:hover {
     width: 75%;
     height: auto;
 }
-
-/* Style rules for about section */
-
 
 
 /* Styles for projects section */
@@ -164,6 +160,9 @@ section#projects div.flex {
     padding: 15px;
     width: calc(50% - 20px);
 }
+.project-card img {
+    width: 100%;
+}
 .gallery {
     margin: 0 auto;
     flex-wrap: wrap;
@@ -173,7 +172,7 @@ section#projects div.flex {
 
 /* Styles for footer */
 footer {
-    background-color: var(--footerColor);
+    background-color: var(--secondaryColor);
     padding: 60px 0;
 }
 footer .flex {
@@ -188,30 +187,26 @@ footer .flex {
 }
 #quick-links ul li a {
     text-decoration: none;
-    color: var(--textColor);
+    color: var(--text);
     position: relative;
 }
-#quick-links ul li a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--textColor);
-    transition: transform 0.15s ease-out;
-    background-color: var(--accentColor);
+#quick-links ul li a:hover {
+    color: var(--accentColor);
+    transition: 0.15s;
 }
-#quick-links ul li a:hover::after {
-    transform: scaleX(1);
+.socials a {
+    color: var(--text);
+    font-size: 150%;
 }
-.socials {
-    color: #F4F7F9;
+.socials a:hover {
+    color: var(--accentColor);
+    transition: 0.15s;
+}
+.socials div.flex {
+    justify-content: space-evenly;
 }
 #copyright {
     font-size: 80%;
     padding-top: 30px;
     text-align: center;
-    opacity: .3;
 }
