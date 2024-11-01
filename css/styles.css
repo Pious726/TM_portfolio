@@ -59,7 +59,8 @@ section {
 .section-heading::after {
     content: '';
     height: 2px;
-    width: 10%;
+    width: 15%;
+    border-radius: 1em;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -143,7 +144,7 @@ nav li button.btn-full:hover {
     font-size: 300%;
 }
 .header-img {
-    width: 75%;
+    width: 300px;
     height: auto;
 }
 
