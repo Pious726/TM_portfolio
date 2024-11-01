@@ -21,7 +21,8 @@ html {
     color: var(--text);
 }
 .container {
-    max-width: 1140px;
+    max-width: 1400px;
+    width: 80%;
     margin: 0 auto;
 }
 .flex {
@@ -31,8 +32,13 @@ html {
     align-items: center;
 }
 section {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 50px 0;
+}
+section#header {
+    padding-bottom: 0;
+}
+section#about {
+    padding-top: 0;
 }
 .acc {
     background-color: var(--secondaryColor);
@@ -56,15 +62,16 @@ section {
 #back-to-top {
     display: none;
     position: fixed;
-    bottom: 25px;
-    right: 30px;
+    bottom: 30px;
+    right: 40px;
     z-index: 99;
     background-color: var(--text);
     color: var(--secondaryColor);
-    font-size: 110%;
-    padding: 15px;
+    font-size: 100%;
+    padding: 10px;
     border-radius: 100%;
     transition: display 1.25s ease-out;
+    cursor: pointer;
 }
 .section-heading {
     text-align: center;
@@ -102,9 +109,18 @@ p {
     font-weight: 300;
     padding: 15px 0;
 }
+p a {
+    font-weight: 300;
+    color: var(--accentColor);
+}
 
 
 /* Styles for header section */
+#header {
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+}
 header.flex {
     justify-content: space-between;
 }
@@ -154,21 +170,30 @@ nav li button.btn-full:hover {
     padding: 5em 0;
 }
 #name {
-    font-size: 300%;
+    font-size: 500%;
 }
 .header-img {
-    width: 300px;
-    height: auto;
+    height: 70%;
+    max-height: 500px;
+    width: auto;
+    object-fit: cover;
+}
+
+
+/* Styles for about section */
+.description {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 
 /* Styles for projects section */
-section#projects div.flex {
+section#projects .flex {
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .project-card {
-    background-color: #000;
+    background-color: var(--secondaryColor);
     border-radius: 1em;
     margin: 20px 0;
     padding: 15px;
@@ -180,7 +205,18 @@ section#projects div.flex {
 .gallery {
     margin: 0 auto;
     flex-wrap: wrap;
-    width: calc(25% - px);
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+.gallery-card {
+    background-color: var(--secondaryColor);
+    border-radius: 1em;
+    margin: 20px 0;
+    padding: 15px;
+    width: calc(25% - 20px);
+    height: auto;
 }
 
 
@@ -210,14 +246,14 @@ footer .flex {
 }
 .socials a {
     color: var(--text);
-    font-size: 150%;
+    font-size: 170%;
 }
 .socials a:hover {
     color: var(--accentColor);
     transition: 0.15s;
 }
-.socials div.flex {
-    justify-content: space-evenly;
+.socials .flex {
+    justify-content: space-between;
 }
 #copyright {
     font-size: 80%;
