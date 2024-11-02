@@ -199,22 +199,6 @@ section#projects .flex {
 .project-card img {
     width: 100%;
 }
-.gallery {
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-.gallery-card {
-    background-color: var(--secondaryColor);
-    border-radius: 1em;
-    margin: 20px 0;
-    padding: 15px;
-    width: calc(25% - 20px);
-    height: auto;
-}
 
 
 /* Styles for contact section */
