@@ -53,14 +53,20 @@
             <h1 class="section-heading">My Skills</h1>
             <p class="resume subheading">Take a look at my resume <a href="images/TylerMcDowell_resume.pdf" target="_blank">here.</a></p>
             <div class="flex">
-                <div>
-
+                <div class="skills-card">
+                    <h3>Education</h3>
                 </div>
-                <div>
-
+                <div class="skills-card">
+                    <h3>Experience</h3>
                 </div>
-                <div>
-                    
+                <div class="skills-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Blueprint (UE5)</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -133,17 +139,17 @@
                         <label for="email">Email Address*:</label>
                         <input type="text" id="email">
                     </div>
-                    <div class="flex">
+                    <div class="radio flex">
                         <div>
-                            <input type="radio" id="webdev" value="Web Dev">
+                            <input type="radio" id="webdev" name="project_type" value="Web Dev">
                             <label for="webdev">Web Dev</label>
                         </div>
                         <div>
-                            <input type="radio" id="gamedev" value="Game Dev">
+                            <input type="radio" id="gamedev" name="project_type" value="Game Dev">
                             <label for="gamedev">Game Dev</label>
                         </div>
                         <div>
-                            <input type="radio" id="design" value="Design">
+                            <input type="radio" id="design" name="project_type" value="Design">
                             <label for="design">Design</label>
                         </div>
                     </div>

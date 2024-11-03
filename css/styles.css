@@ -7,11 +7,11 @@
     outline: 0;
 }
 :root {
-    --mainColor: #001021;
-    --secondaryColor: #000;
-    --accentColor: #007BFF;
+    --mainColor: #0a0a0a;
+    --secondaryColor: #1e09da;
+    --accentColor: #4400ff;
     --text: #F4F7F9;
-    --alttext: #001021;
+    --alttext: #000;
 }
 html {
     font-family: "Nunito Sans", sans-serif;
@@ -19,6 +19,7 @@ html {
     font-size: 16px;
     background-color: var(--mainColor);
     color: var(--text);
+    scroll-behavior: smooth;
 }
 .container {
     max-width: 1400px;
@@ -108,9 +109,11 @@ p {
 }
 p a {
     font-weight: 300;
-    color: var(--accentColor);
+    color: var(--text);
 }
-
+p a:hover {
+    color: var(--alttext)
+}
 
 /* Styles for header section */
 #header {
@@ -184,6 +187,17 @@ nav li button.btn-full:hover {
 }
 
 
+/* Style for skills section */
+#skills .flex {
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.skills-card h3 {
+    text-align: center;
+}
+
+
 /* Styles for projects section */
 section#projects .flex {
     flex-wrap: wrap;
@@ -215,17 +229,24 @@ form {
     justify-content: left;
     margin: 20px 0;
 }
+#contact .radio.flex {
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+}
 input {
     margin-left: 10px;
-    padding: 8px 0;
+    padding: 8px 5px;
     border-radius: 1em;
     font-family: "Outfit", sans-serif;
 }
 textarea {
     margin-left: 10px;
-    padding: 8px 5px;
+    padding: 20px 5px;
     border-radius: 1em;
     font-family: "Outfit", sans-serif;
+    resize: none;
+    width: 50%;
 }
 
 /* Styles for footer section */
@@ -277,4 +298,14 @@ footer .right-side.flex input {
     font-size: 80%;
     padding-top: 30px;
     text-align: center;
+}
+
+/* Media query for mobile viewport */
+@media only screen and (max-width: 750px) {
+    section {
+        padding: 30px 0;
+    }
+    .project-card {
+        width: 100%;
+    }
 }
