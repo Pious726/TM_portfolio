@@ -25,6 +25,7 @@ mobileNavIcon.onclick = function() {
 
     if(mobileNav.classList.contains("open-menu")){
         mobileNavIcon.src = "images/TM_mobileNavIcon-close.png";
+        mobileNavIcon.style.position = "fixed";
     }
     else {
         mobileNavIcon.src = "images/TM_mobileNavIcon.png";
