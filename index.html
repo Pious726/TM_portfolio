@@ -7,11 +7,210 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit&display=swap" rel="stylesheet">
-    <title>Tyler McDowell</title>
+    <title>Tyler McDowell - Web/Game Developer</title>
 </head>
 <body>
+    <button onclick="toTop()" id="back-to-top" type="button"><ion-icon name="arrow-up-outline"></ion-icon></button>
+
+    <section id="header">
+        <div class="container">
+            <header class="flex">
+                <a href="index.html"><img src="images/TM_logo-white.png" class="logo" alt="logo"></a>
+                <div class="hamburger">
+                    <img src="images/TM_mobileNavIcon.png" class="mobile" id="mobileNavIcon" alt="hamburger menu">
+                    <nav class="mobile mobile-nav" id="mobileNav">
+                        <ul>
+                            <li><a href="#header">HOME</a></li>
+                            <li><a href="#about">ABOUT ME</a></li>
+                            <li><a href="#skills">SKILLS</a></li>
+                            <li><a href="#projects">PROJECTS</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="navigation">
+                    <ul class="navbar flex">
+                        <li><a href="#header">HOME</a></li>
+                        <li><a href="#about">ABOUT ME</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li><button type="button" class="btn btn-full" onclick="location.href='#contact';">INTERESTED?</button></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="header-body flex">
+                <div class="header1">
+                    <h1 id="name">Tyler McDowell</h1>
+                    <h2 id="title">A Web/Game Developer.</h2>
+                </div>
+                <div class="logo-hero">
+                    <img src="images/TM_logo-white.png" class="header-img" alt="hero image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="container">
+            <h1 class="section-heading">About Me</h1>
+            <p class="description">Hi! My name is Tyler McDowell. This website’s purpose is to present my past projects and give a description of the methods and programs used to achieve the final product. This website also presents the workplace experience, skills, and certifications I possess. With my 4 years of experience using Adobe programs and coding in HTML, CSS, and Javascript I possess the skills necessary to develop complex websites as well as create clean and professional illustrations. Recently I've been using Unreal Engine 5 to create minigames that I am using to develop my skills in the engine and it's coding language, Blueprint.</p>
+        </div>
+    </section>
+
+
+    <section id="skills" class="acc">
+        <div class="container">
+            <h1 class="section-heading">My Skills</h1>
+            <p class="resume subheading">Take a look at my resume <a href="images/TylerMcDowell_resume.pdf" target="_blank">here.</a></p>
+            <div class="flex">
+                <div class="skills-card">
+                    <h3>Education</h3>
+                    <p>Currently a student at Thaddeus Stevens College of Technology in the Computer Software Engineering Technology program.</p>
+                </div>
+                <div class="skills-card">
+                    <h3>Experience</h3>
+                    <p>No work experience.</p>
+                </div>
+                <div class="skills-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Blueprint (UE5)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <div class="container">
+            <h1 class="section-heading">My Projects</h1>
+            <div class="flex">
+                <div class="project-card">
+                    <h3>SOLIS: Energy Drinks</h3>
+                    <img src="images/SOLIS.png" alt="project 1">
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean ullamcorper ullamcorper urna penatibus nullam felis vivamus neque leo. Sagittis turpis dolor velit neque; nulla luctus nulla. Dictum diam sapien; est tristique efficitur turpis litora mi. Leo praesent risus egestas ex mauris.</p>
+                    <button type="button" class="btn btn-hollow" onclick="window.open('https://pious726.github.io/TM_SOLIS/')">View Here!</button>
+                </div>
+                <div class="project-card">
+                    <h3>Rock, Paper, Scissors</h3>
+                    <img src="images/rock-paper-scissors.png" alt="project 2">
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean ullamcorper ullamcorper urna penatibus nullam felis vivamus neque leo. Sagittis turpis dolor velit neque; nulla luctus nulla. Dictum diam sapien; est tristique efficitur turpis litora mi. Leo praesent risus egestas ex mauris.</p>
+                    <button type="button" class="btn btn-hollow" onclick="window.open('https://pious726.github.io/CSET105_WeeklyASGN2/')">View Here!</button>
+                </div>
+                <div class="project-card">
+                    <h3>Tic, Tac, Toe</h3>
+                    <img src="images/tic-tac-toe.png" alt="project 3">
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean ullamcorper ullamcorper urna penatibus nullam felis vivamus neque leo. Sagittis turpis dolor velit neque; nulla luctus nulla. Dictum diam sapien; est tristique efficitur turpis litora mi. Leo praesent risus egestas ex mauris.</p>
+                    <button type="button" class="btn btn-hollow" onclick="window.open('https://pious726.github.io/TM_CSET115_TicTacToe/')">View Here!</button>
+                </div>
+                <div class="project-card">
+                    <h3>Stated. Final Project</h3>
+                    <img src="images/Stated..png" alt="project 4">
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean ullamcorper ullamcorper urna penatibus nullam felis vivamus neque leo. Sagittis turpis dolor velit neque; nulla luctus nulla. Dictum diam sapien; est tristique efficitur turpis litora mi. Leo praesent risus egestas ex mauris.</p>
+                    <button type="button" class="btn btn-hollow" onclick="window.open('https://pious726.github.io/TM_CSET110_FINAL1/')">View Here!</button>
+                </div>
+                <div class="project-card">
+                    <h3>Poly Animal Poster</h3>
+                    <img src="images/TM_PolyProject.jpeg" alt="project 6">
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean ullamcorper ullamcorper urna penatibus nullam felis vivamus neque leo. Sagittis turpis dolor velit neque; nulla luctus nulla. Dictum diam sapien; est tristique efficitur turpis litora mi. Leo praesent risus egestas ex mauris.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Poly Animal Poster 2</h3>
+                    <img src="images/TM_project-challenge.png" alt="project 7">
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean ullamcorper ullamcorper urna penatibus nullam felis vivamus neque leo. Sagittis turpis dolor velit neque; nulla luctus nulla. Dictum diam sapien; est tristique efficitur turpis litora mi. Leo praesent risus egestas ex mauris.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Video Game Movie Poster</h3>
+                    <img src="images/TM_game-poster.png" alt="project 5">
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean ullamcorper ullamcorper urna penatibus nullam felis vivamus neque leo. Sagittis turpis dolor velit neque; nulla luctus nulla. Dictum diam sapien; est tristique efficitur turpis litora mi. Leo praesent risus egestas ex mauris.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+            <h1 class="section-heading">Contact Me!</h1>
+            <p class="subheading">Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean ullamcorper ullamcorper urna penatibus nullam felis vivamus neque leo.</p>
+            <form>
+                <div class="form-container">
+                    <div class="flex">
+                        <label for="fname">First Name*:</label>
+                        <input type="text" id="fname" required>
+                    </div>
+                    <div class="flex">
+                        <label for="lname">Last Name*:</label>
+                        <input type="text" id="lname" required>
+                    </div>
+                    <div class="flex">
+                        <label for="email">Email*:</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="radio flex">
+                        <div>
+                            <input type="radio" id="webdev" name="project_type" value="Web Dev">
+                            <label for="webdev">Web Dev</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="gamedev" name="project_type" value="Game Dev">
+                            <label for="gamedev">Game Dev</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="design" name="project_type" value="Design">
+                            <label for="design">Design</label>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <label for="message">Message:</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container flex">
+            <div id="quick-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="right-side flex">
+                <div class="socials">
+                    <p>Find me here!</p>
+                    <div class="flex">
+                        <a href="#" target="_blank"><ion-icon name="logo-discord"></ion-icon></a>
+                        <a href="https://github.com/Pious726" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="subscribe?">
+                    <p>Subscribe for project updates!</p>
+                    <input type="text" id="subscribe?" placeholder="Email Address">
+                </div>
+            </div>
+            
+        </div>
+        <p id="copyright">Copyright 2024 &copy; All rights reserved. Created by Tyler McDowell.</p>
+    </footer>
 
 
     <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
