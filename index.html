@@ -16,6 +16,18 @@
         <div class="container">
             <header class="flex">
                 <a href="index.html"><img src="images/TM_logo-white.png" class="logo" alt="logo"></a>
+                <div class="hamburger">
+                    <img src="images/TM_mobileNavIcon.png" class="mobile" id="mobileNavIcon" alt="hamburger menu">
+                    <nav class="mobile mobile-nav" id="mobileNav">
+                        <ul>
+                            <li><a href="#header">HOME</a></li>
+                            <li><a href="#about">ABOUT ME</a></li>
+                            <li><a href="#skills">SKILLS</a></li>
+                            <li><a href="#projects">PROJECTS</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <nav class="navigation">
                     <ul class="navbar flex">
                         <li><a href="#header">HOME</a></li>
@@ -32,7 +44,7 @@
                     <h1 id="name">Tyler McDowell</h1>
                     <h2 id="title">A Web/Game Developer.</h2>
                 </div>
-                <div>
+                <div class="logo-hero">
                     <img src="images/TM_logo-white.png" class="header-img" alt="hero image">
                 </div>
             </div>
@@ -136,7 +148,7 @@
                         <input type="text" id="lname" required>
                     </div>
                     <div class="flex">
-                        <label for="email">Email Address*:</label>
+                        <label for="email">Email*:</label>
                         <input type="text" id="email">
                     </div>
                     <div class="radio flex">
