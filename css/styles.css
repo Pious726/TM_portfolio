@@ -232,10 +232,18 @@ nav li button.btn-full:hover {
 /* Style for skills section */
 #skills .flex {
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 auto;
 }
+.skills-card {
+    margin: 5px 0;
+    width: calc(33% - 5px);
+}
 .skills-card h3 {
+    text-align: center;
+}
+.skills-card p {
+    padding: 0;
     text-align: center;
 }
 
